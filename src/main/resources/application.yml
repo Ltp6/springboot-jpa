@@ -1,0 +1,13 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: springboot-jpa
+  datasource:
+    url: jdbc:mysql://cdb-8tvjaaoc.cd.tencentcdb.com:10095/jpa?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: ltp@zpym
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
