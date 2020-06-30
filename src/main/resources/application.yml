@@ -11,3 +11,8 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+polyv:
+  appId: foucrmoiej
+  userId: 32585cb2a6
+  appSecret: 7335ec173f144463bd199f23a463deb0
+  url: https://api.polyv.net/live/v3

@@ -5,6 +5,7 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 @DynamicUpdate
@@ -16,11 +17,12 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(columnDefinition = "varchar(20) COMMENT '用户名'")
     private String username;
-
+    @Column(columnDefinition = "varchar(20) COMMENT '密码'")
     private String password;
-
+    @Column(columnDefinition = "varchar(20) COMMENT '昵称'")
     private String nickName;
-
-    private LocalDate createTime;
+    @Column(columnDefinition = "datetime COMMENT '创建时间'")
+    private LocalDateTime createTime;
 }
